@@ -1,0 +1,20 @@
+.container {
+  @apply flex items-center justify-between h-14 px-5 lg:h-16 lg:px-7;
+  @apply text-[13px] bg-white dark:bg-black/[0.05];
+}
+
+.copyright {
+  > span {
+    @apply font-medium mr-1.5 text-zinc-400 dark:text-gray-500;
+  }
+
+  > a {
+    @apply cursor-pointer transition-colors text-gray-800 hover:text-primary dark:text-white dark:hover:text-primary;
+  }
+}
+
+.menu {
+  > a {
+    @apply font-medium text-gray-500 transition-colors hover:text-primary;
+  }
+}

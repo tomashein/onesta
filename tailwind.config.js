@@ -3,7 +3,11 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primary: '#0ea5e9'
+      }
+    }
   },
   plugins: [require('prettier-plugin-tailwindcss')]
 };

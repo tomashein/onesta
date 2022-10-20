@@ -1,0 +1,34 @@
+.link {
+  @apply flex flex-col items-center justify-center w-24 my-2 py-2 md:w-[106px] md:text-[13px];
+  @apply rounded text-xs font-medium transition-colors;
+
+  > span:first-child {
+    @apply transition-colors h-7 w-7 mb-2 text-slate-700;
+  }
+
+  > span:last-child {
+    @apply transition-colors text-gray-400;
+  }
+
+  &:hover {
+    > span:first-child {
+      @apply text-primary;
+    }
+
+    > span:last-child {
+      @apply text-white;
+    }
+  }
+}
+
+.link_active {
+  @apply bg-black/[0.1];
+
+  > span:first-child {
+    @apply text-primary;
+  }
+
+  > span:last-child {
+    @apply text-white;
+  }
+}

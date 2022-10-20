@@ -1,0 +1,37 @@
+.container {
+  @apply fixed z-50 h-screen w-28 md:w-32 lg:block lg:w-36;
+  @apply bg-zinc-800;
+}
+
+.container_hidden {
+  @apply -translate-x-28 md:-translate-x-32 lg:transform-none;
+}
+
+.container_visible {
+  @apply transform-none;
+}
+
+.brand {
+  @apply hidden lg:flex lg:flex-col lg:items-center lg:py-7;
+
+  > a {
+    @apply w-16 text-primary;
+
+    > svg {
+      @apply fill-primary;
+    }
+  }
+}
+
+.menu {
+  @apply flex flex-col items-center py-4;
+}
+
+.overlay {
+  @apply fixed top-0 right-0 left-0 bottom-0 z-40 lg:hidden;
+  @apply bg-black/[0.15];
+}
+
+.overlay_hidden {
+  @apply hidden;
+}

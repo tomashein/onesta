@@ -18,8 +18,10 @@
     "paths": {
       "@/assets/*": ["src/common/assets/*"],
       "@/components/*": ["src/common/components/*"],
+      "@/config/*": ["src/common/config/*"],
       "@/hooks/*": ["src/common/hooks/*"],
       "@/layout": ["src/common/layout"],
+      "@/services/*": ["src/common/services/*"],
       "@/styles/*": ["src/common/styles/*"],
       "@/types": ["src/common/types"]
     }

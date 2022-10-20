@@ -1,0 +1,24 @@
+.container {
+  @apply fixed top-0 right-0 z-50 h-screen w-80 duration-300 lg:w-[30rem];
+}
+
+.container_hidden {
+  @apply translate-x-80 md:-translate-x-32 lg:translate-x-[30rem];
+}
+
+.container_visible {
+  @apply transform-none;
+}
+
+.card {
+  @apply rounded-none;
+}
+
+.overlay {
+  @apply fixed top-0 right-0 left-0 bottom-0 z-40;
+  @apply bg-black/[0.15];
+}
+
+.overlay_hidden {
+  @apply hidden;
+}

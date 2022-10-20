@@ -1,0 +1,3 @@
+.button {
+  @apply w-6 transition-colors text-zinc-400 hover:text-primary lg:hidden;
+}

@@ -1,0 +1,16 @@
+.container {
+  @apply fixed right-0 top-0 z-20 h-14 w-full flex justify-between lg:h-16 lg:pl-36;
+  @apply bg-white dark:bg-black/[0.05];
+
+  > div {
+    @apply flex items-center justify-center px-4 gap-2 lg:px-7;
+  }
+}
+
+.brand {
+  @apply h-8 w-8 mr-2 fill-primary stroke-primary lg:hidden;
+}
+
+.title {
+  @apply text-lg font-semibold text-zinc-800 dark:text-zinc-400;
+}
