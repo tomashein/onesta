@@ -1,0 +1,35 @@
+.container {
+  @apply relative overflow-x-auto;
+}
+
+.table {
+  @apply w-full;
+
+  > thead {
+    @apply text-left text-xs uppercase text-zinc-400 dark:text-zinc-600;
+
+    > tr {
+      @apply border-b border-dashed border-b-zinc-100 dark:border-b-zinc-700/[0.5];
+
+      > th {
+        @apply min-w-[125px] py-4 pl-2.5 font-semibold first:pl-0;
+      }
+    }
+  }
+
+  > tbody {
+    @apply text-[13px] font-medium text-zinc-500 lg:text-sm;
+
+    > tr {
+      @apply border-b border-dashed border-b-zinc-100 dark:border-b-zinc-700/[0.5] last:border-b-0;
+
+      > td {
+        @apply min-w-[125px] py-4 pl-2.5 first:pl-0;
+
+        > a {
+          @apply text-zinc-800 transition-colors hover:text-primary dark:text-zinc-300 dark:hover:text-primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  @apply px-5 py-2 rounded-md transition-all lg:py-2.5;
+  @apply text-[13px] font-medium lg:text-sm;
+  @apply disabled:shadow-[inset_0_0_0_99999px_rgba(0,0,0,0.1)] hover:shadow-[inset_0_0_0_99999px_rgba(0,0,0,0.05)];
+}
+
+.primary {
+  @apply bg-primary text-white hover:shadow-[inset_0_0_0_99999px_rgba(0,0,0,0.05)];
+}
+
+.light {
+  @apply text-slate-500 bg-slate-50 hover:shadow-[inset_0_0_0_99999px_rgba(0,0,0,0.02)];
+}

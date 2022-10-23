@@ -19,8 +19,10 @@
       "@/assets/*": ["src/common/assets/*"],
       "@/components/*": ["src/common/components/*"],
       "@/config/*": ["src/common/config/*"],
+      "@/helpers/*": ["src/common/helpers/*"],
       "@/hooks/*": ["src/common/hooks/*"],
       "@/layout": ["src/common/layout"],
+      "@/modules/*": ["src/modules/*"],
       "@/services/*": ["src/common/services/*"],
       "@/styles/*": ["src/common/styles/*"],
       "@/types": ["src/common/types"]

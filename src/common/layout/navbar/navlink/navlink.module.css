@@ -3,11 +3,11 @@
   @apply rounded text-xs font-medium transition-colors;
 
   > span:first-child {
-    @apply transition-colors h-7 w-7 mb-2 text-slate-700;
+    @apply transition-colors h-7 w-7 mb-2 text-zinc-700;
   }
 
   > span:last-child {
-    @apply transition-colors text-gray-400;
+    @apply transition-colors text-zinc-400;
   }
 
   &:hover {

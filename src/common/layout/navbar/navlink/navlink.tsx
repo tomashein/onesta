@@ -20,8 +20,8 @@ const Navlink: React.FC<Props> = ({ href, title, icon, exact }) => {
   return (
     <Link href={href}>
       <a className={`${styles.link} ${activeStyle}`}>
-        <span className={styles.icon}>{icon}</span>
-        <span className={styles.title}>{title}</span>
+        <span>{icon}</span>
+        <span>{title}</span>
       </a>
     </Link>
   );
