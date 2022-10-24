@@ -9,7 +9,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return { props: { client } };
 };
 
-const Client: NextPage<Props> = ({ client }) => {
+const ClientPage: NextPage<Props> = ({ client }) => {
   return (
     <Layout title={`${client.name} ${client.lastName}`}>
       <ClientDetail client={client} />
@@ -17,7 +17,7 @@ const Client: NextPage<Props> = ({ client }) => {
   );
 };
 
-export default Client;
+export default ClientPage;
 
 type Props = {
   client: Client;
