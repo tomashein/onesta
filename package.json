@@ -1,7 +1,8 @@
 {
   "name": "onesta",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
