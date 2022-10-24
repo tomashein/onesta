@@ -2,7 +2,7 @@ import { createContext, useCallback, useMemo, useState } from 'react';
 
 type Drawer = {
   title: string;
-  component: () => JSX.Element;
+  component: (callback: any) => JSX.Element;
   callback?: () => void;
 };
 

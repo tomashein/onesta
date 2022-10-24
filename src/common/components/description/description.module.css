@@ -1,0 +1,17 @@
+.wrapper {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8;
+}
+
+.item {
+  > span {
+    @apply block;
+  }
+}
+
+.label {
+  @apply font-medium text-zinc-50;
+}
+
+.value {
+  @apply text-zinc-600 dark:text-zinc-500 dark:font-semibold;
+}

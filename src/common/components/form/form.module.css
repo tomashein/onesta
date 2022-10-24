@@ -1,0 +1,16 @@
+.item {
+  @apply mb-5 flex flex-col text-[13px] font-medium;
+
+  > label {
+    @apply mb-1.5;
+  }
+}
+
+.actions {
+  @apply flex items-center justify-center;
+}
+
+.error {
+  @apply mt-2 text-xs text-red-500;
+  @apply dark:text-red-400;
+}

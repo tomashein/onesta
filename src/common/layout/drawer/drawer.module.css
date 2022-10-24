@@ -1,9 +1,17 @@
 .container {
   @apply fixed top-0 right-0 z-50 h-screen w-80 duration-300 lg:w-[30rem];
+
+  > article {
+    @apply flex flex-col;
+
+    > div {
+      @apply flex-1 overflow-y-auto;
+    }
+  }
 }
 
 .container_hidden {
-  @apply translate-x-80 md:-translate-x-32 lg:translate-x-[30rem];
+  @apply translate-x-80 lg:translate-x-[30rem];
 }
 
 .container_visible {
@@ -11,7 +19,15 @@
 }
 
 .card {
-  @apply rounded-none;
+  @apply rounded-none h-full;
+}
+
+.close {
+  @apply transition-colors text-zinc-400 text-[12px] hover:text-primary;
+
+  > svg {
+    @apply w-5 h-5 stroke-2;
+  }
 }
 
 .overlay {

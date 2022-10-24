@@ -15,6 +15,8 @@ const Drawer = () => {
 
   const Component = drawer.component;
 
+  const props = { callback: drawer.callback };
+
   return (
     <>
       <aside className={containerClass}>
@@ -22,12 +24,12 @@ const Drawer = () => {
           className={styles.card}
           title={drawer.title}
           toolbar={
-            <button onClick={closeDrawer}>
-              <XMarkIcon className="h-5 w-5" />
+            <button className={styles.close} onClick={closeDrawer}>
+              <XMarkIcon />
             </button>
           }
         >
-          <Component />
+          <Component {...props} />
         </Card>
       </aside>
       <div className={overlayClass} onClick={closeDrawer} />

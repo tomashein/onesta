@@ -12,3 +12,7 @@ export type ClientsResponse = {
   clients: Client[];
   count: number;
 };
+
+export type ClientResponse = {
+  client: Client;
+};

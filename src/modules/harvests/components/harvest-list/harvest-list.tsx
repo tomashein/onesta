@@ -2,15 +2,35 @@ import Card from '@/components/card';
 import Button from '@/components/button';
 import Table from '@/components/table';
 import Pagination from '@/components/pagination';
+import useDrawer from '@/hooks/useDrawer';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useSWRConfig } from 'swr';
 import useHarvests from '../../hooks/useHarvests';
 import { Harvest } from '../../types';
+import HarvestForm from '../harvest-form';
 
 const HarvestList = () => {
   const [page, setPage] = useState(1);
+  const { openDrawer } = useDrawer();
+  const { mutate } = useSWRConfig();
 
-  const toolbar = <Button variant="primary">Add Harvest</Button>;
+  const toolbar = (
+    <Button
+      onClick={() =>
+        openDrawer({
+          title: 'Add Harvests',
+          component: HarvestForm,
+          callback: () => {
+            mutate(`/api/harvests?page=${page}`);
+          }
+        })
+      }
+      variant="primary"
+    >
+      Add Harvest
+    </Button>
+  );
 
   const columns = [
     {

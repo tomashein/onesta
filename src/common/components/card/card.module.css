@@ -3,7 +3,7 @@
 }
 
 .header {
-  @apply flex items-center justify-between min-h-[4rem] px-6 pt-5 lg:px-7 lg:pt-6;
+  @apply flex items-center justify-between px-6 pt-5 lg:px-7 lg:pt-6;
 }
 
 .title {

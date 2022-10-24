@@ -6,8 +6,10 @@
 
 .primary {
   @apply bg-primary text-white hover:shadow-[inset_0_0_0_99999px_rgba(0,0,0,0.05)];
+  @apply disabled:bg-primary/[0.7] disabled:hover:bg-primary/[0.7] disabled:hover:shadow-none disabled:shadow-none;
 }
 
 .light {
   @apply text-slate-500 bg-slate-50 hover:shadow-[inset_0_0_0_99999px_rgba(0,0,0,0.02)];
+  @apply dark:text-zinc-400 dark:bg-zinc-700 dark:hover:shadow-[inset_0_0_0_99999px_rgba(0,0,0,0.05)];
 }
